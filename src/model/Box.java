@@ -1,7 +1,10 @@
+import javafx.scene.paint.Color;
+
 /**
  * Une case peut être dans différents états.
  * @inv <pre>
  *      getState() != null
+ *      getColor() != null
  * </pre>
  */
 public interface Box {
@@ -50,6 +53,12 @@ public interface Box {
      */
     State getState();
 
+    /**
+     * Donne la couleur actuelle de la case.
+     * @return une couleur
+     */
+    Color getColor();
+
     //COMMANDES
     /**
      * Modifie l'état de la case par celui spécifié.
@@ -70,4 +79,15 @@ public interface Box {
      * </pre>
      */
     void nextState();
+
+    /**
+     * Modifier la couleur de la case par <code>color</code>
+     * @pre <pre>
+     *     color != null
+     * </pre>
+     * @post <pre>
+     *     getColor() == color
+     * </pre>
+     */
+    void changeColor(Color color);
 }
