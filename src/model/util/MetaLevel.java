@@ -11,7 +11,7 @@ import java.awt.Dimension;
  *     getSize() != null
  * </pre>
  */
-public class Level {
+public class MetaLevel {
     //STATIQUES
     public static final String BLACK_MODE = "Noir et blanc";
     public static final String COLOR_MODE = "Couleur";
@@ -37,7 +37,7 @@ public class Level {
      * @param mode le mode (couleur ou noir et blanc)
      * @param size la taille de la grille
      */
-    public Level(String name, String mode, Dimension size) {
+    public MetaLevel(String name, String mode, Dimension size) {
         if (name == null || mode == null || size == null) {
             throw new AssertionError("Les arguments 'name', 'mode' et 'size' ne peuvent pas être nuls");
         }
@@ -84,7 +84,7 @@ public class Level {
     @Override
     public boolean equals(Object o) {
         if (o != null && o.getClass() == this.getClass()) {
-            Level level = (Level) o;
+            MetaLevel level = (MetaLevel) o;
             return level.getName().equals(this.getName()) && level.getMode().equals(this.getMode())
                     && level.getSize().equals(this.getSize());
         }
