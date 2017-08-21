@@ -51,8 +51,8 @@ public interface Grid<T> {
     /**
      * Permet de changer l'objet stocké dans la grille en position (x, y).
      * @pre <pre>
-     *      0 <= x < getWidth()
-     *      0 <= y < getHeight()
+     *      0 <= x
+     *      0 <= y
      * </pre>
      * @post <pre>
      *     getObjectAt(x, y) == o
