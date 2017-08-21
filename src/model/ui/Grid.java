@@ -1,3 +1,5 @@
+package model.ui;
+
 import java.awt.Dimension;
 
 /**

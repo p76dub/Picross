@@ -1,3 +1,5 @@
+package model.ui;
+
 import javafx.scene.paint.Color;
 
 /**
