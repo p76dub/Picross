@@ -13,8 +13,8 @@ import java.awt.Dimension;
  */
 public class MetaLevel {
     //STATIQUES
-    public static final String BLACK_MODE = "Noir et blanc";
-    public static final String COLOR_MODE = "Couleur";
+    public static final String BLACK_MODE = "black";
+    public static final String COLOR_MODE = "color";
 
     //ATTRIBUTS
     private final String name;
